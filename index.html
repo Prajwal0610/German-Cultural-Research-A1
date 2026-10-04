@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>German Culture A1 | Internship Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <div class="logo">Deutsch<span>A1</span></div>
+      <div class="nav-links">
+        <a href="#topics">Topics</a>
+        <a href="#strategy">Strategy</a>
+        <a href="#quiz">Quiz</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">INTERNSHIP • WEEK 1</p>
+      <h1>Discover German Culture<br><span>while learning German.</span></h1>
+      <p class="hero-text">
+        An interactive A1 learning demo connecting German culture,
+        everyday communication, traditions, food and design.
+      </p>
+      <a class="btn" href="#topics">Explore Topics ↓</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div>
+        <p class="eyebrow">PROJECT OBJECTIVE</p>
+        <h2>Culture becomes a reason to communicate.</h2>
+      </div>
+      <p>
+        This internship project integrates beginner German language learning
+        with practical cultural contexts. Each topic introduces simple facts,
+        useful German expressions and an activity learners can perform.
+      </p>
+    </section>
+
+    <section id="topics" class="section">
+      <div class="section-title">
+        <p class="eyebrow">4 CULTURAL TOPICS</p>
+        <h2>Learn through real contexts</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="icon">👋</div>
+          <span>01</span>
+          <h3>Greetings & Etiquette</h3>
+          <p>Learn Hallo, Guten Tag, Danke, Bitte and the difference between du and Sie.</p>
+          <button onclick="showInfo('greetings')">View lesson →</button>
+        </article>
+
+        <article class="card">
+          <div class="icon">🎉</div>
+          <span>02</span>
+          <h3>Festivals & Traditions</h3>
+          <p>Explore Oktoberfest, Carnival and seasonal traditions with dates and simple phrases.</p>
+          <button onclick="showInfo('festivals')">View lesson →</button>
+        </article>
+
+        <article class="card">
+          <div class="icon">🥨</div>
+          <span>03</span>
+          <h3>Food & Everyday Life</h3>
+          <p>Practice food vocabulary, preferences, prices and ordering in a café.</p>
+          <button onclick="showInfo('food')">View lesson →</button>
+        </article>
+
+        <article class="card">
+          <div class="icon">🎨</div>
+          <span>04</span>
+          <h3>Bauhaus & Design</h3>
+          <p>Discover German design history through colours, shapes and simple descriptions.</p>
+          <button onclick="showInfo('bauhaus')">View lesson →</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="strategy" class="strategy">
+      <div class="section-title">
+        <p class="eyebrow">TEACHING STRATEGY</p>
+        <h2>From culture to communication</h2>
+      </div>
+      <div class="steps">
+        <div><b>01</b><strong>Connect</strong><p>Start with something familiar.</p></div>
+        <div><b>02</b><strong>Discover</strong><p>Present 3–5 cultural facts.</p></div>
+        <div><b>03</b><strong>Learn</strong><p>Teach useful A1 phrases.</p></div>
+        <div><b>04</b><strong>Practice</strong><p>Use a guided activity.</p></div>
+        <div><b>05</b><strong>Communicate</strong><p>Complete a real-life task.</p></div>
+        <div><b>06</b><strong>Compare</strong><p>Reflect respectfully.</p></div>
+      </div>
+    </section>
+
+    <section id="quiz" class="quiz-section">
+      <div class="section-title">
+        <p class="eyebrow">A1 QUICK CHECK</p>
+        <h2>Test your German culture knowledge</h2>
+      </div>
+      <div class="quiz-box">
+        <p id="question">Which German phrase means “Thank you”?</p>
+        <div class="options">
+          <button onclick="answer(this, false)">Bitte</button>
+          <button onclick="answer(this, true)">Danke</button>
+          <button onclick="answer(this, false)">Hallo</button>
+        </div>
+        <p id="result"></p>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-box">
+      <button class="close" onclick="closeModal()">×</button>
+      <p class="eyebrow">A1 LESSON</p>
+      <h2 id="modal-title"></h2>
+      <p id="modal-text"></p>
+      <div id="modal-phrase" class="phrase"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>German Cultural Research & Strategy • Internship Week 1</p>
+    <p>Prepared as an A1 learning strategy demonstration.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
